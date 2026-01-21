@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PROBE | Security Utility</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#000000">
+</head>
+
+<body>
+
+<div class="modal hidden" id="popup">
+    <div class="modal-box">
+        <h3 id="popupTitle"></h3>
+        <p id="popupMessage" class="popup-message"></p>
+        <button onclick="closePopup()">OK</button>
+    </div>
+</div>
+
+<div class="container">
+    <h1>PROBE</h1>
+    <p class="subtitle">Security Utility</p>
+
+    <div class="feature-grid">
+
+        <div class="card">
+            <h3>URL Analysis</h3>
+            <input id="urlInput" type="text" placeholder="Enter URL for analysis..." />
+            <button onclick="checkURL()">Check URL Safety →</button>
+        </div>
+
+        <div class="card">
+            <h3>File Integrity</h3>
+            <input type="file" id="fileInput">
+            <button onclick="generateHash()">Generate File Hash</button>
+            <button onclick="verifyHash()">Verify File Integrity</button>
+        </div>
+
+        <div class="card">
+            <h3>Password Strength Checker</h3>
+            <input
+                type="password"
+                id="passwordInput"
+                placeholder="Enter password"
+                oninput="checkPasswordStrength()"
+            >
+
+            <div class="progress-bar">
+                <div id="strengthBar"></div>
+            </div>
+            <p id="strengthText" class="subtitle"></p>
+        </div>
+
+        <div class="card">
+            <h3>Password Generator</h3>
+
+            <div class="password-row">
+                <input
+                    type="text"
+                    id="generatedPassword"
+                    placeholder="Generated password"
+                    readonly
+                />
+                <button class="copy-btn" onclick="copyPassword()" title="Copy">📋</button>
+            </div>
+
+            <button onclick="generatePassword()">Generate Strong Password</button>
+
+            <div id="copyStatus" class="hidden">Copied to clipboard</div>
+
+            <div class="password-options">
+                <label>
+                    <input type="checkbox" id="optUpper" checked>
+                    <span>Uppercase (A–Z)</span>
+                </label>
+
+                <label>
+                    <input type="checkbox" id="optLower" checked>
+                    <span>Lowercase (a–z)</span>
+                </label>
+
+                <label>
+                    <input type="checkbox" id="optNumbers" checked>
+                    <span>Numbers (0–9)</span>
+                </label>
+
+                <label>
+                    <input type="checkbox" id="optSymbols" checked>
+                    <span>Special characters</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>File Encryption</h3>
+
+            <input type="file" id="encryptFileInput">
+            <input type="password" id="encPassword" placeholder="Secret key (password)">
+            <button onclick="encryptFile()">Encrypt File</button>
+            <button onclick="decryptFile()">Decrypt File</button>
+        </div>
+
+        <div class="card">
+            <h3>Secure Notes / Text Encryption</h3>
+
+            <textarea
+                id="secureText"
+                class="auto-expand"
+                rows="1"
+                placeholder="Enter text to encrypt or decrypt..."
+            ></textarea>
+
+            <input
+                type="password"
+                id="securePassword"
+                placeholder="Encryption password"
+            />
+
+            <button onclick="encryptText()">Encrypt</button>
+            <button onclick="decryptText()">Decrypt</button>
+
+            <div id="secureResult" class="secure-output hidden"></div>
+
+        </div>
+
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
