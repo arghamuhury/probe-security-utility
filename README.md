@@ -1,190 +1,113 @@
-\# PROBE – Security Utility Web Application
+# **PROBE — SECURITY UTILITY WEB APPLICATION**
 
+**Probe** is a full-stack cybersecurity utility web application designed to provide essential security tools through a clean, intuitive, and minimal interface. The project emphasizes real-world security use cases by combining secure backend logic, modern frontend design, and practical cryptographic implementations.
 
-
-Probe is a full-stack security utility web application designed to provide essential cybersecurity tools through a clean, intuitive interface. The project focuses on real-world security use cases, combining secure backend logic with modern frontend design.
-
-
-
-Built using Flask and deployed on PythonAnywhere, Probe demonstrates practical implementation of cryptography, secure file handling, and security analysis techniques commonly used in production systems.
-
-
+Built using **Flask** and deployed on **PythonAnywhere**, Probe demonstrates hands-on implementation of cryptography, secure file handling, and security analysis techniques commonly used in production-grade systems.
 
 ---
 
+## **FEATURES**
 
+### **URL SAFETY ANALYSIS**
+- Rule-based URL validation and threat detection  
+- Input sanitization with strict URL format validation  
 
-\## 🔐 Features
+### **FILE INTEGRITY VERIFICATION**
+- SHA-256 hashing for integrity checks  
+- Detects unauthorized or unexpected file modifications  
 
+### **PASSWORD STRENGTH CHECKER**
+- Real-time password complexity evaluation  
+- Identifies weak and insecure passwords  
 
+### **SECURE PASSWORD GENERATOR**
+- Customizable character sets  
+- Generates strong, cryptographically secure random passwords  
 
-\- \*\*URL Safety Analysis\*\*
+### **FILE ENCRYPTION & DECRYPTION**
+- Password-based encryption  
+- Secure processing and handling of user files  
 
-&nbsp; - Rule-based validation and threat detection
-
-&nbsp; - Input sanitization and strict URL validation
-
-
-
-\- \*\*File Integrity Verification\*\*
-
-&nbsp; - SHA-256 hashing
-
-&nbsp; - Detects unauthorized file modifications
-
-
-
-\- \*\*Password Strength Checker\*\*
-
-&nbsp; - Evaluates password complexity in real time
-
-
-
-\- \*\*Secure Password Generator\*\*
-
-&nbsp; - Customizable character sets
-
-&nbsp; - Generates strong, random passwords
-
-
-
-\- \*\*File Encryption \& Decryption\*\*
-
-&nbsp; - Password-based encryption
-
-&nbsp; - Secure handling of user files
-
-
-
-\- \*\*Secure Notes / Text Encryption\*\*
-
-&nbsp; - Client-side text encryption
-
-&nbsp; - Password-protected sensitive notes
-
-&nbsp; - No server-side storage of plaintext data
-
-
+### **SECURE NOTES / TEXT ENCRYPTION**
+- Client-side text encryption  
+- Password-protected sensitive notes  
+- No server-side storage of plaintext data  
 
 ---
 
+## **TECH STACK**
 
+### **BACKEND**
+- Python  
+- Flask  
 
-\## 🛠 Tech Stack
+### **FRONTEND**
+- HTML5  
+- CSS3  
+- JavaScript  
 
+### **SECURITY & CRYPTOGRAPHY**
+- AES  
+- PBKDF2  
+- SHA-256  
 
+### **DEPLOYMENT**
+- PythonAnywhere  
 
-\- \*\*Backend:\*\* Python, Flask
-
-\- \*\*Frontend:\*\* HTML5, CSS3, JavaScript
-
-\- \*\*Security \& Cryptography:\*\* AES, PBKDF2, SHA-256
-
-\- \*\*Deployment:\*\* PythonAnywhere
-
-\- \*\*Version Control:\*\* Git, GitHub
-
-
+### **VERSION CONTROL**
+- Git  
+- GitHub  
 
 ---
 
-
-
-\## 📂 Project Structure
-
-
+## **PROJECT STRUCTURE**
 
 probe-security-utility/
-
 ├── app.py
-
 ├── static/
-
 │ ├── css/
-
 │ └── js/
-
 ├── templates/
-
 ├── uploads/
-
 ├── requirements.txt
-
 └── README.md
 
 
+---
+
+## **DEPLOYMENT**
+
+The application is deployed on **PythonAnywhere** and follows Flask best practices for routing, static asset management, and secure request handling.
 
 ---
 
+## **PROJECT FOCUS**
 
-
-\## 🚀 Deployment
-
-
-
-The application is deployed on \*\*PythonAnywhere\*\* and follows Flask best practices for static assets, routing, and security handling.
-
-
+- Secure coding practices  
+- Cryptography fundamentals  
+- Client-side vs server-side security concepts  
+- Clean and user-friendly UI/UX for security tools  
+- Practical cybersecurity implementation  
 
 ---
 
+## **FUTURE IMPROVEMENTS**
 
-
-\## 🎯 Project Focus
-
-
-
-\- Secure coding practices
-
-\- Cryptography fundamentals
-
-\- Client-side vs server-side security
-
-\- Clean UI/UX for security tools
-
-\- Practical cybersecurity implementation
-
-
+- Domain reputation scoring  
+- Downloadable encrypted notes  
+- API-based threat intelligence integration  
+- User authentication and account management  
+- Improved logging and monitoring  
 
 ---
 
+## **LICENSE**
 
-
-\## 📌 Future Improvements
-
-
-
-\- Domain reputation scoring
-
-\- Downloadable encrypted notes
-
-\- API-based threat intelligence integration
-
-\- Authentication and user accounts
-
-\- Improved logging and monitoring
-
-
+This project is intended strictly for **educational and demonstrational purposes**.
 
 ---
 
+## **SCREENSHOTS**
 
-
-\## 📄 License
-
-
-
-This project is for educational and demonstrational purposes.
-
-
-
-\## 📸 Screenshots
-
-
-
-\### Dashboard Overview
-
-!\[Dashboard](screenshots/dashboard.png)
-
-
-
+### **DASHBOARD OVERVIEW**
+![Dashboard](./screenshots/dashboard.png)
