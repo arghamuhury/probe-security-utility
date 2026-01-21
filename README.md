@@ -65,13 +65,12 @@ Built using **Flask** and deployed on **PythonAnywhere**, Probe demonstrates han
 probe-security-utility/
 ├── app.py
 ├── static/
-│ ├── css/
-│ └── js/
+│   ├── css/
+│   └── js/
 ├── templates/
 ├── uploads/
 ├── requirements.txt
 └── README.md
-
 
 ---
 
