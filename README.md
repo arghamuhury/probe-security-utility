@@ -62,6 +62,7 @@ Built using **Flask** and deployed on **PythonAnywhere**, Probe demonstrates han
 
 ## **PROJECT STRUCTURE**
 
+```
 probe-security-utility/
 ├── app.py
 ├── static/
@@ -71,6 +72,8 @@ probe-security-utility/
 ├── uploads/
 ├── requirements.txt
 └── README.md
+
+```
 
 ---
 
